@@ -1,0 +1,13 @@
+#Programa para inverter os caracteres de uma string em Python, sem usar funções prontas como reverse:
+
+def inverter_string(s):
+    resultado = ''
+    for i in range(len(s)-1, -1, -1):
+        resultado += s[i]
+    return resultado
+
+# Entrada da string
+string = input("Digite uma string: ")
+
+# Resultado
+print("String invertida:", inverter_string(string))
